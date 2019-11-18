@@ -6,7 +6,7 @@ driver = webdriver.Chrome("C:\\Users\\kalmarevelin\\chromedriver.exe")
 driver.get("https://evelinkalmar.github.io/first-project/")
 #driver.find_element(By.ID, "a-input").send_keys("1")
 
-first_number=input("Elso szam")
+first_number = input("Elso szam")
 second_number = input("Masodik")
 first_input_field = driver.find_element(By.ID, "a-input")
 first_input_field.send_keys(first_number)
