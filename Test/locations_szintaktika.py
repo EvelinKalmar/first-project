@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 
 driver = webdriver.Chrome("C:\\Users\\kalmarevelin\\chromedriver.exe")
 driver.get("http://www.learnwebservices.com/locations/server")
+
 coordinates = driver.find_element(By.XPATH, "//tr[td[text() = 'Dobogókő']]/td[3]").text
 print(type(coordinates))
 city_id = driver.find_element(By.XPATH, "//tr[td[text() = 'Alattyán']]/td[1]").text
