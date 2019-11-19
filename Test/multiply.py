@@ -1,6 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-import random
+#import random
 
 driver = webdriver.Chrome("C:\\Users\\kalmarevelin\\chromedriver.exe")
 driver.get("http://www.jtechlog.hu/tesztautomatizalas-201909/szorzotabla.html")
