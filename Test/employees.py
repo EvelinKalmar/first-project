@@ -52,7 +52,6 @@ def update_name(new_name):
     input_name.send_keys(new_name)
     update_button = driver.find_element(By.NAME, "j_idt11:j_idt12").click()
 
-
 #search("Jane Doe")
 #deletebyname()
 #hungarian()
