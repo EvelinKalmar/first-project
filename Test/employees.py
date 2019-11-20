@@ -13,8 +13,8 @@ def search(word):
     query.send_keys(word)
     submit = driver.find_element(By.XPATH, ("//html/body/div/form[2]/input[2]")).click()
 
-#def deletebyid(id):
-    #employee_id = driver.find_element(By.XPATH, "//tr[td[text() = '768d6331 - c37a - 4b6c - 99d6 - 4e40d1ddf4c0']]/td[1]").text
+def deletebyid(id):
+    employee_id = driver.find_element(By.XPATH, "/html/body/div/table/tbody/tr[td[a[text() = 'id']]]/td[last()]/form/input[@type = 'submit'").text
 
 def deletebyname():
     delete = driver.find_element(By.CSS_SELECTOR, ("#j_idt21\:0\:j_idt42 > input[type=submit]:nth-child(2)")).click()
