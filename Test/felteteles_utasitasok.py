@@ -30,8 +30,14 @@ def find_lat_by_name(name):
     print(lat)
     return lat
 
+def print_when_lat_between(name):
+    lat = find_lat_by_name(name)
+    if lat < 48.2 and lat < 48.4:
+        print("Közé esik")
+    else:
+        print("Nem esik közé")
 
 
 print_when_lat_greater_than_48("Ajax")
 print_when_lat_greater_than_48("fityiszváros")
-
+print_when_lat_between("Ajax")
